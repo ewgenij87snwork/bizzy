@@ -5,23 +5,53 @@ title: Index page
 
 {% block content %}
 	
-	{# variable example #}
-	<h1>{{title}}</h1>
+<!-- begin section__top -->
+<div class="hero" style="background: url('img/header.jpg') 50% 50% no-repeat;">
+	<div class="container">
+		<!-- begin header -->
+		<div class="header">
+			<div class="logo"><img src="img/logo.png" alt=""/></div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Page Styles</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- end header -->
+		<!-- begin main -->
+		<div class="main">
+			<h1 class="main__title">Yout website is the image<br/> for your business.</h1>
+			<h4 class="main__subtitle">Make yourself look as good as you are.</h4>
+			<a href="#" class="btn">Get Bizzy</a>
+		</div>
+		<!-- end main -->
+	</div>
+</div>
+<!-- end section__top -->
 
-	
-	{# partial example #}
-	{% include "partials/_header.html" %}
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
-
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-		
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
+<!-- begin section__features -->
+<section class="features">
+	<div class="container">
+		<div class="feature">
+			<img src="img/ico-computer.png" alt="" class="feature__image"/>
+			<h3 class="feature__title">Web Design</h3>
+			<div class="feature__text">We made this websitee with a few clicks here and there. We can help.</div>
+		</div>
+		<div class="feature">
+			<img src="img/ico-image.png" alt="" class="feature__image"/>
+			<h3 class="feature__title">Art Direction</h3>
+			<div class="feature__text">We create identity proper strategic methods to grow your business.</div>
+		</div>
+		<div class="feature">
+			<img src="img/ico-code.png" alt="" class="feature__image"/>
+			<h3 class="feature__title">App Development</h3>
+			<div class="feature__text">We can make a mean App. But it gives us a mean appetite for McDonalls.</div>
+		</div>
+	</div>
+</section>
+<!-- end section__features -->
 
 {% endblock %}
