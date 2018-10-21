@@ -116,6 +116,9 @@ nav
 		flex-direction: row
 		justify-content: space-between
 		// width: 110px 
+		+r(800) 
+			flex-direction: column
+		
 .feature
 	display: flex
 	flex-direction: column
@@ -124,6 +127,9 @@ nav
 	margin-left: 30px
 	&:first-of-type
 		margin-left: 0
+	+r(800) 
+		margin-left: 0
+	
 	img
 		margin: 0 auto
 		margin-bottom: 11px 
@@ -134,5 +140,18 @@ nav
 	&__text
 		font-size: 15px
 		line-height: 1.5
+
+		// kusok iz charts
+		text-align: center
+		font-size:  1.5rem
+		background: rgba(255, 255, 255, .38) 
+		font-family: 'Open Sans', sans-serif
+		color: #000 
+		margin: 0 auto
+		padding: 5px 15px
+		box-shadow: 0 0 5px #000
+		z-index: 1
+		+r(800) 
+			margin-bottom: 50px
 		 
 
