@@ -117,13 +117,216 @@ nav
 	color: #FFF 
 	margin: 0 auto
 	margin-bottom: 30px
+	margin-top: 70px
 	font-size: 16px
 	text-decoration: none
 	line-height: 55px
 	padding: 0 30px
 	border-radius: 30px
-	background: rgb(52, 196, 130)
+	
+	// background: rgb(52, 196, 130)
 		 
+//////////////////////////////////////////////
+
+// BUTTON STYLES 200 STRINGS
+
+//////////////////////////////////////////////
+
+// .button
+// 	margin: 20px
+// 	float: left
+// 	position: relative
+// 	font-family: arial
+// 	text-transform: uppercase
+// 	color: #fff
+// 	cursor: pointer
+
+
+.btn-label
+	padding: 10px
+	display: inline-block
+	font-weight: bold 
+	
+
+.v19
+	.btn-label 
+		padding: 10px 30px
+		font-family: arial
+		font-size: 14px
+		display: inline-block
+		z-index: 10
+		position: relative
+		white-space: nowrap
+		line-height: 24px
+		transition: all 0.225s
+		transition-delay: 0.45s
+		letter-spacing: 2px
+	
+
+	&.button-start
+		.btn-label
+			padding: 12px 65px
+		
+	
+
+	.btn-icon2 
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		transition: all 0.225s
+		transform: skew(-40deg, 0deg) scaleX(1)
+		background: rgba(#f0202f, 0.8)
+		transition-delay: 0.45s
+	
+
+	.btn-icon 
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		transition: all 0.225s
+		transform: scale(0.9) skew(0deg, 0deg)
+		transition-delay: 0.15s
+
+		&:before, &:after 
+			width: 60px
+			opacity: 0
+			content: ''
+			height: 1px
+			position: absolute
+			display: block
+			background: #f0202f
+			transition: all 0.375s
+			transition-delay: 0.3s
+		
+		&:before 
+			top: 0
+			left: calc(50% - 30px)
+		
+		&:after 
+			bottom: 0
+			right: calc(50% - 30px)
+		
+		span 
+
+			&:before, &:after 
+				height: 0
+				transition-delay: 0s
+				content: ''
+				background: #f0202f
+				position: absolute
+				display: block
+				width: 2px
+				transition: all 0.225s
+			
+			&:before 
+				left: 0
+				top: 0
+			
+			&:after 
+				right: 0
+				bottom: 0
+			
+		
+	
+	&:hover 
+		.btn-icon 
+			transform: skew(-40deg, 0deg)
+
+			&:before, &:after 
+				transition-delay: 0s
+				width: 30px
+				opacity: 1
+			
+			&:before 
+				left: 0
+			
+			&:after 
+				right: 0
+		
+
+		span 
+			&:before, &:after 
+				height: 30px
+				transition-delay: 0.45s
+			
+		
+		
+		.btn-icon2 
+			transform: skew(-40deg, 0deg) scaleX(0.2)
+			background: transparent
+			transition-delay: 0s
+			opacity: 0
+		
+	
+
+	&.white
+
+		&:hover 
+			.btn-label
+				color: #fff
+				transition-delay: 0s
+		
+		
+		.btn-icon2 
+			background: #fff
+		
+		.btn-icon 
+
+			&:before, &:after 
+				background: #fff
+		
+		span 
+			&:before, &:after 
+				background: #fff
+			
+		
+		
+	
+	&.labelred
+		.btn-label
+			color: #f0202f
+		
+	
+	&.labelgray
+		.btn-label
+			color: #1D1D1D
+		
+	
+	&.transparent
+		float: none
+		display: inline-block
+		-webkit-transform: translateZ(0px)
+		transform: translateZ(0px)
+
+		.btn-label
+			color: #fff
+			transition-delay: 0s
+		
+		.btn-icon2 
+			background: transparent
+		
+		.btn-icon 
+			transform: scale(1) skew(10deg, 0deg)
+
+			&:before, &:after 
+				background: #fff
+			
+		span 
+			&:before, &:after 
+				background: #fff
+			
+		
+		
+		&:hover 
+			.btn-icon 
+				transform: scale(1) skew(-40deg, 0deg)
+		
 //////////////////////////////////////////////
 
 // FEATURES
